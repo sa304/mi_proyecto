@@ -4,20 +4,13 @@
       <router-link to="/">Login</router-link> |
       <router-link to="/home">Home</router-link> |
       <router-link to="/favoritos">Favoritos</router-link>
-
-<div class="container mt-5">
-  <input type="text" v-model="email">
-    <input type="text" v-model="password">
-    <button @click="login">Log in</button>
-    <button @click="quienSoy">¿Quien soy?</button>
-    <button @click="logout">Log out</button>
-</div>
     </div>
+    <router-view/><!--lo mas importante-->
   </div>
 </template>
 
-<script>
-import Firebase from 'firebase'
+<!--script>
+import Firebase from 'firebase'​
 export default {
   name: 'App',
   data() {
@@ -48,7 +41,7 @@ export default {
     }
   }
 }
-</script>
+</script-->
 
 <style lang="scss">
 #app {
@@ -67,7 +60,7 @@ export default {
     color: #2c3e50;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #fff;
     }
   }
 }
