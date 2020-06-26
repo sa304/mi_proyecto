@@ -7,9 +7,7 @@
       <router-link class="btn-sm btn-success" to="/fuente">Fuente</router-link>
     </div>
     <router-view />
-
     <!--lo mas importante-->
-
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
   <div class="home" id="home">
     <div>
-    <Navbar />
+    <Navbar /><!--llama al componente-->
     </div>
 
     <h5 class="mt-3 auto ml-2">Recomendadas</h5>
@@ -21,13 +21,17 @@
         />
       </div>
     </div>
+
+<Footer /> <!--importa componente-->
+
+
   </div>
 </template>
 
 <script>
 import Navbar from "@/components/Navbar.vue";
 import Show from "@/components/Show.vue";
-
+import Footer from "@/components/Footer.vue"; /*no borrar*/
 import axios from "axios";
 import { mapState, mapActions } from "vuex";
 
@@ -57,7 +61,8 @@ export default {
   },
   components: {
     Show,
-    Navbar
+    Navbar,
+    Footer
   }
 };
 </script>
@@ -65,7 +70,7 @@ export default {
 <style lang="scss" scope>
 #home {
   background: #d18a07;
-  text-align: left;
+  text-align: justify;
 }
 
 #nav {
