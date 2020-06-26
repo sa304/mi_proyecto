@@ -1,5 +1,5 @@
 {
-  "name": "shows",
+  "name": "s",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -29,5 +29,17 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "description": "## Project setup ``` yarn install ```",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sa304/mi_proyecto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sa304/mi_proyecto/issues"
+  },
+  "homepage": "https://github.com/sa304/mi_proyecto#readme"
 }

@@ -7,7 +7,7 @@
     <h5 class="mt-3 auto ml-2">Recomendadas</h5>
 
     <div class="container">
-      <div class="row">
+      <div class="row mx-auto">
         <!--ordenado para firestore-->
         <Show
           v-for="(show, index) in shows"
