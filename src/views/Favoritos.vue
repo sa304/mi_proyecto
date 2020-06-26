@@ -1,55 +1,59 @@
 <template>
-  <div>
-    <b-table small :fields="fields" :items="items" responsive="sm">
-      <!-- A virtual column -->
-      <template v-slot:cell(index)="data">
-        {{ data.index + 1 }}
-      </template>
+<div>
 
-      <!-- A custom formatted column -->
-      <template v-slot:cell(name)="data">
-        <b class="text-info">{{ data.value.last.toUpperCase() }}</b>, <b>{{ data.value.first }}</b>
-      </template>
+<Navbar /> <!--importa componente-->
 
-      <!-- A virtual composite column -->
-      <template v-slot:cell(nameage)="data">
-        {{ data.item.name.first }} is {{ data.item.age }} years old
-      </template>
-
-      <!-- Optional default data cell scoped slot -->
-      <template v-slot:cell()="data">
-        <i>{{ data.value }}</i>
-      </template>
-    </b-table>
-
-
-    
-  </div>
+<div class="container">
+ <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+  
+</div>
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        fields: [
-          // A virtual column that doesn't exist in items
-          'index',
-          // A column that needs custom formatting
-          { key: 'name', label: 'Full Name' },
-          // A regular column
-          'age',
-          // A regular column
-          'sex',
-          // A virtual column made up from two fields
-          { key: 'nameage', label: 'First name and age' }
-        ],
-        items: [
-          { name: { first: 'John', last: 'Doe' }, sex: 'Male', age: 42 },
-          { name: { first: 'Jane', last: 'Doe' }, sex: 'Female', age: 36 },
-          { name: { first: 'Rubin', last: 'Kincade' }, sex: 'Male', age: 73 },
-          { name: { first: 'Shirley', last: 'Partridge' }, sex: 'Female', age: 62 }
-        ]
-      }
-    }
+import Navbar from "@/components/Navbar.vue"; /*no borrar*/
+
+export default {
+  name: "Favoritos", /*se debe llamar igual*/
+  components: {
+    Navbar
   }
+};
 </script>
+
+<style lang="scss">
+
+</style>
+
+
+
+

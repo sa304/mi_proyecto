@@ -1,24 +1,7 @@
 <template>
   <div class="home" id="home">
     <div>
-      <b-navbar toggleable="lg" type="light" variant="info">
-        <b-navbar-brand href="#">Laberinto TV</b-navbar-brand>
-
-        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-        <b-collapse id="nav-collapse" is-nav>
-          <b-navbar-nav class="ml-auto">
-            <b-nav-form>
-              <b-form-input
-                size="large"
-                class="mr-sm-2 text-center"
-                placeholder="Titulo, Categoría"
-              ></b-form-input>
-              <b-button size="large" class="my-2 my-sm-0" type="submit">Ver</b-button>
-            </b-nav-form>
-          </b-navbar-nav>
-        </b-collapse>
-      </b-navbar>
+    <Navbar />
     </div>
 
     <h5 class="mt-3 auto ml-2">Recomendadas</h5>
@@ -42,13 +25,14 @@
 </template>
 
 <script>
-import Show from "@/components/Show.vue";
 import Navbar from "@/components/Navbar.vue";
+import Show from "@/components/Show.vue";
+
 import axios from "axios";
 import { mapState, mapActions } from "vuex";
 
 export default {
-  name: "Home",
+  name: "Home", /*se debe llamar igual*/
   computed: {
     ...mapState(["shows"])
   },
@@ -72,7 +56,8 @@ export default {
     });
   },
   components: {
-    Show
+    Show,
+    Navbar
   }
 };
 </script>
