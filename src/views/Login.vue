@@ -1,11 +1,12 @@
 <template>
  <div class="container mt-5">
-        <b-input class="text-center mt-5" type="text" v-model="email" placeholder="usuario@gmail.com"></b-input>
-        <b-input class="text-center mt-5" type="text" v-model="password" placeholder="123456"></b-input>
+   <h1 class="text-center text-white">Sing in</h1>
+        <b-input class="text-center mt-3" type="text" v-model="email" placeholder="usuario@gmail.com"></b-input>
+        <b-input class="text-center mt-3" type="text" v-model="password" placeholder="123456"></b-input>
 
-        <b-button @click="login" class="mr-2 btn-sm btn-success mx-5 my-5">Log in</b-button>
-        <b-button @click="quienSoy" class="mr-2 btn-sm btn-warning mx-5 my-5">¿Quien soy?</b-button>
-        <b-button @click="logout" class="mr-2 btn-sm btn btn-danger mx-5 my-5">Log out</b-button>
+        <b-button @click="login" block variant="primary" class="mt-3">Log in</b-button>
+        <b-button @click="quienSoy" block variant="primary" class="mt-3">¿Quien soy?</b-button>
+        <b-button @click="logout" block variant="primary" class="mt-3 mb-5">Log out</b-button>
  </div>
 </template>
 
