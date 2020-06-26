@@ -1,11 +1,14 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Login</router-link> |
-      <router-link to="/home">Home</router-link> |
-      <router-link to="/favoritos">Favoritos</router-link>
+      <router-link class="btn-sm btn-success" to="/">Login</router-link> |
+      <router-link class="btn-sm btn-success" to="/home">Home</router-link> |
+      <router-link class="btn-sm btn-success" to="/favoritos">Favoritos</router-link> | 
+      <router-link class="btn-sm btn-success" to="/fuente">Fuente</router-link>
     </div>
-    <router-view/><!--lo mas importante-->
+    <router-view />
+    <!--lo mas importante-->
+
   </div>
 </template>
 
@@ -45,21 +48,20 @@ export default {
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Helvetica;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
 }
 
 #nav {
   padding: 30px;
+  background: #280cc7;
 
-  a {
+  #a {
     font-weight: bold;
-    color: #2c3e50;
+    color: #fff;   
 
-    &.router-link-exact-active {
+    #router-link {
       color: #fff;
     }
   }
