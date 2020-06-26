@@ -1,0 +1,13 @@
+en esta seccion se avanzo con el desarrollo de componente
+navbar y footer 
+
+y estos se comunican con las vistas home, favoritos y fuente
+
+se obtinen los datos desde la api
+
+
+likes se registran en vuex
+
+se crea tabla pero esta debe conectarse aun con firebase
+
+se agrega boton pero falta conectar la logica pensando en estructura firebase proximo hito

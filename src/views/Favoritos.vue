@@ -18,21 +18,21 @@
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>Firestore</td>
-      <td>Firestore</td>
-      <td>Firestore</td>
+      <td></td>
+      <td></td>
+   <td><button class="btn btn-sm btn-success">Like or dislike</button></td>
     </tr>
     <tr>
       <th scope="row">2</th>
-      <td>Firestore</td>
-      <td>Firestore</td>
-      <td>Firestore</td>
+      <td></td>
+      <td></td>
+<td></td>
     </tr>
     <tr>
       <th scope="row">3</th>
-      <td>Firestore</td>
-      <td>Firestore</td>
-      <td>Firestore</td>
+      <td></td>
+      <td></td>
+    <td></td>
     </tr>
   </tbody>
 </table>
